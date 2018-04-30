@@ -19,12 +19,13 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.gms:play-services-auth:9.0.0'
-    implementation 'com.google.firebase:firebase-messaging:9.0.0'
-    implementation 'com.google.firebase:firebase-core:9.0.0'
-     implementation 'com.google.firebase:firebase-database:9.0.0'
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+    implementation 'com.google.firebase:firebase-messaging:12.0.1'
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.google.firebase:firebase-database:12.0.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-maps:12.0.1'
     testImplementation 'junit:junit:4.12'
@@ -32,3 +33,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 //apply plugin: 'com.google.android.gsm.google-services'
+
+apply plugin: 'com.google.gms.google-services'
